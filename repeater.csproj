@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Cocona.Lite" Version="1.5.0" />
+      <PackageReference Include="GraphQL" Version="4.5.0" />
+      <PackageReference Include="GraphQL.Client" Version="3.2.4" />
+      <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="3.2.4" />
+      <PackageReference Include="Lib9c" Version="1.0.0-dev.fe16fa3fdf49328b4802df863900b448d8c2ef7c" />
+      <PackageReference Include="Libplanet" Version="0.11.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="StrawberryShake.Transport.Http" Version="11.3.0" />
+    </ItemGroup>
+
+</Project>
