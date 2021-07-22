@@ -56,11 +56,11 @@ namespace repeater
                     null,
                     DateTimeOffset.UtcNow
                 );
-                var txHex = ByteUtil.Hex(tx.Serialize(true));
+                var txBase64 = Convert.ToBase64String(tx.Serialize(true));
 
                 var txRequest = new GraphQLRequest
                 {
-                    Query = $"mutation {{ stageTx(payload: \"{txHex}\") }}",
+                    Query = $"mutation {{ stageTx(payload: \"{txBase64}\") }}",
                 };
                 var res = await gqlClient.SendMutationAsync<dynamic>(txRequest);
                 Console.WriteLine(res.Data.stageTx);
